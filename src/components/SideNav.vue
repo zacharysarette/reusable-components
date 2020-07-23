@@ -24,7 +24,7 @@ export default {
 </script>
 <style scoped>
 nav {
-  height: 90%; /* Full-height: remove this if you want "auto" height */
+  height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -43,7 +43,7 @@ nav {
 footer {
   display: inline-block;
   position:absolute;
-  bottom:0px;
+  bottom: 0px;
   left: -240px;
   color: #A9A9A9;
 }
