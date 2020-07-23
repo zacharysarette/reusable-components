@@ -6,7 +6,8 @@
     <Button v-for="link in links" :key="link.id" variant="text"  :label="link.label" :clickFunction="link.function" />
     <footer>
       Repo: <a href="https://github.com/zacharysarette/reusable-components">GitHub Link</a>
-      </br>
+      <br/>
+      <br/>
       &copy; Zachary Sarette
     </footer>
   </nav>
