@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <side-nav :links="[{id:1, label:'Buttons', function: null}]"/>
+    <header>
+      Buttons
+    </header>
     <main class="table">
       <div>
         <span>
@@ -180,7 +183,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:wght@500&family=Ubuntu+Mono&display=swap');
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -197,8 +200,7 @@ Button {
 main {
   display: table;
   margin-left: 260px; /* Same as the width of the sidebar */
-  margin-left: 260px; /* Same as the width of the sidebar */
-  padding: 50px 10px;
+  padding: 20px 10px;
   text-align: left;
   font-family: Ubuntu Mono;
   font-style: normal;
@@ -222,5 +224,15 @@ div {
 span {
   display: table-cell;
   padding-right:20px;
+}
+header {
+  padding-top: 20px;
+  margin-left: 260px; /* Same as the width of the sidebar */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
 }
 </style>

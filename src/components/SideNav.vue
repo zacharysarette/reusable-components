@@ -1,5 +1,8 @@
 <template>
   <nav>
+    <header>
+      Reusable Components
+    </header>
     <Button v-for="link in links" :key="link.id" variant="text"  :label="link.label" :clickFunction="link.function" />
     <footer>
       &copy; Zachary Sarette
@@ -21,7 +24,7 @@ export default {
 </script>
 <style scoped>
 nav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: 90%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -43,5 +46,11 @@ footer {
   bottom:0px;
   left: -240px;
   color: #A9A9A9;
+}
+header {
+  display: inline-block;
+  position:relative;
+  font-size: 18px;
+  left: -240px;
 }
 </style>
