@@ -1,5 +1,7 @@
 # reusable-components
 
+This is a vue project with re-usable components
+
 ## Project setup
 ```
 npm install
