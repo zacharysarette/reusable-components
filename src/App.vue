@@ -167,7 +167,7 @@ export default {
         outline: '<Button variant="outiline"/>',
         text: '<Button variant="text"/>',
         disabled: '<Button disabled/>',
-        disabledText: '<Button variatn="text" disabled/>',
+        disabledText: '<Button variant="text" disabled/>',
         startIcon: '<Button startIcon="add_shopping_cart"/>',
         endIcon: '<Button endIcon="add_shopping_cart"/>',
         primary: '<Button color="primary"/>',
