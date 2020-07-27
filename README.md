@@ -2,6 +2,11 @@
 
 This is a vue project with re-usable components
 
+__Screen shot:__
+
+
+![A scarecrow and a 404 page](./screenshot.png)t
+
 ## Project setup
 ```
 npm install
