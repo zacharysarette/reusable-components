@@ -229,12 +229,12 @@ button {
 .lg {
   padding: 10px 20px 10px 20px;
 }
-.disabled {
+.disabled, .disabled:hover {
   background: #E0E0E0;
   color: #9E9E9E;
   cursor: not-allowed
 }
-.disabled-text {
+.disabled-text, .disabled-text:hover {
   background: none;
   color: #9E9E9E;
   cursor: not-allowed
