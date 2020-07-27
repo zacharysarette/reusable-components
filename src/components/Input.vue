@@ -19,6 +19,7 @@
       :placeholder="placeHolder"
       :class="getComputedClasses"
       :value="value"
+      :disabled="disabled ? 'disabled' : ''"
     >
     </textarea>
     <input
@@ -26,6 +27,7 @@
       :placeholder="placeHolder"
       :class="getComputedClasses"
       :value="value"
+      :disabled="disabled ? 'disabled' : ''"
     >
     <i
       v-if="endIcon !== undefined"
