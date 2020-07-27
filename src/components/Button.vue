@@ -107,6 +107,7 @@ button {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  outline: none
 }
 .default {
   border-radius: 6px;
@@ -231,6 +232,7 @@ button {
 .disabled {
   background: #E0E0E0;
   color: #9E9E9E;
+  cursor: not-allowed
 }
 .disabled-text {
   background: none;

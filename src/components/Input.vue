@@ -182,7 +182,8 @@ input:focus, .inputFocus, .inputFocus:hover, textarea:focus {
 .disabled {
   border: none;
   background: #f2f2f2;
-  color: #828282
+  color: #828282;
+  cursor: not-allowed
 }
 .sm {
   height:40px
