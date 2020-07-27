@@ -5,7 +5,7 @@ This is a vue project with re-usable components
 __Screen shot:__
 
 
-![A screenshot of reusable components ](./screenshot.png)t
+![A screenshot of reusable components ](./screenshot.PNG)t
 
 ## Project setup
 ```
