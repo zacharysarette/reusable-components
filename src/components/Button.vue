@@ -237,5 +237,6 @@ button {
 .disabled-text {
   background: none;
   color: #9E9E9E;
+  cursor: not-allowed
 }
 </style>
