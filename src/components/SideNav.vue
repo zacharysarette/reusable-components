@@ -1,11 +1,15 @@
 <template>
-  <nav>
+  <nav id="sidebar">
     <header>
       Reusable Components
     </header>
-    <Button v-for="link in links" :key="link.id" variant="text"  :label="link.label" :clickFunction="link.function" />
+    <nav v-for="link in links" :key="link.id" class="router-link">
+      <router-link :to="link.path" active-class="Active" exact class="nav">
+        {{ link.label }}
+      </router-link>
+    </nav>
     <footer>
-      Repo: <a href="https://github.com/zacharysarette/reusable-components">GitHub Link</a>
+      Repo: <a class ="footer" href="https://github.com/zacharysarette/reusable-components">GitHub Link</a>
       <br/>
       <br/>
       &copy; Zachary Sarette
@@ -13,20 +17,45 @@
   </nav>
 </template>
 <script>
-import Button from './Button.vue'
 
 export default {
   name: 'SideNav',
-  components: {
-    Button
-  },
   props: {
     links: Array
   }
 }
 </script>
 <style scoped>
-nav {
+.router-link {
+  display: inline-block;
+  text-decoration: none;
+  width:100%;
+}
+.router-link:hover {
+  background: rgba(41, 98, 255, 0.1);
+}
+.Active {
+  display: block;
+  background: rgba(41, 98, 255, 0.1);
+}
+a {
+  display: inline-block;
+  padding:10px;
+  padding-left:50px;
+}
+a.footer {
+  display: inline;
+  padding:0px;
+}
+a:link {
+  text-decoration:none;
+  color:#3D5AFE;
+}
+a:visited {
+  text-decoration:none;
+  color:#3D5AFE;
+}
+#sidebar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -55,5 +84,15 @@ header {
   position:relative;
   font-size: 18px;
   left: -240px;
+}
+footer {
+  margin-left: 260px; /* Same as the width of the sidebar */
+  padding: 30px 10px;
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: left;
+  line-height: 12px;
 }
 </style>
